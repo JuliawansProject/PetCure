@@ -11,39 +11,115 @@
     <!-- header section start -->
     <header class="bg-transparent fixed top-0 left-0 w-full flex z-10">
       <div class="container">
-        <div class="flex item-center justify-between relative">
-            <div class="px-4">
-                <a href="#home" id="home" class="font-bold text-lg text-teal-500 block py-6">PetCure</a>
-            </div>
+        <div class="flex items-center justify-between relative">
+          <div class="px-4">
+            <a
+              href="#home"
+              id="home"
+              class="font-bold text-lg text-teal-500 block py-6"
+              >PetCure</a
+            >
+          </div>
+          <div class="flex items-center px-4 lg:hidden">
+            <button id="hamburger" class="block lg:hidden">
+              <span
+                class="hamburger-line w-[30px] h-[2px] my-2 block bg-slate-900 transition duration-300"
+              ></span>
+              <span
+                class="hamburger-line w-[30px] h-[2px] my-2 block bg-slate-900 transition duration-300"
+              ></span>
+              <span
+                class="hamburger-line w-[30px] h-[2px] my-2 block bg-slate-900 transition duration-300"
+              ></span>
+            </button>
+          </div>
+          <nav
+            id="nav-menu"
+            class="hidden lg:block absolute py-5 bg-white shadow-lg rounded-lg w-full max-w-[250px] right-4 top-full lg:relative lg:bg-transparent lg-shadow-none lg:max-w-full lg:w-auto lg:right-0 lg:top-0"
+          >
+            <ul class="block lg:flex lg:item-center lg:space-x-6">
+              <li class="group">
+                <a
+                  href="#home"
+                  class="text-base text-block py-2 mx-8 flex group-hover:text-teal-500"
+                  >Beranda</a
+                >
+              </li>
+              <li class="group">
+                <a
+                  href="#home"
+                  class="text-base text-block py-2 mx-8 flex group-hover:text-teal-500"
+                  >Beranda</a
+                >
+              </li>
+              <li class="group">
+                <a
+                  href="#home"
+                  class="text-base text-block py-2 mx-8 flex group-hover:text-teal-500"
+                  >Beranda</a
+                >
+              </li>
+              <li class="group">
+                <a
+                  href="#home"
+                  class="text-base text-block py-2 mx-8 flex group-hover:text-teal-500"
+                  >Beranda</a
+                >
+              </li>
+              <li class="group">
+                <a
+                  href="#home"
+                  class="text-base text-block py-2 mx-8 flex group-hover:text-teal-500"
+                  >Beranda</a
+                >
+              </li>
+              <li class="group">
+                <a
+                  href="#home"
+                  class="text-base text-block py-2 mx-8 flex group-hover:text-teal-500"
+                  >Beranda</a
+                >
+              </li>
+            </ul>
+          </nav>
         </div>
       </div>
     </header>
     <!-- header section end -->
     <!-- hero section start -->
-    <section
-      id="home"
-      class="pt-36 pb-100 bg-[url('dog.jpg')] bg-cover bg-center bg-no-repeat relative"
-    >
-      <!-- Overlay gelap (opsional agar teks lebih jelas) -->
+    <section id="home" class="relative h-[550px] w-full overflow-hidden">
+      <!-- Background image -->
+      <img
+        src="pet.png"
+        alt="Pet Image"
+        class="absolute inset-0 w-full h-full object-cover object-center"
+      />
+
+      <!-- Overlay -->
       <div class="absolute inset-0 bg-black/40"></div>
 
-      <div class="container max-w-6xl mx-auto px-6 relative z-10">
-        <div class="flex flex-wrap items-center">
-          <div class="px-4 w-full lg:w-7/12">
-            <p class="text-white font-semibold text-lg mb-2">PetCure</p>
-            <h1 class="text-white text-4xl font-bold">
-              Petcure. Trusted Pet Care.
-            </h1>
-            <a
-              href="#home"
-              class="inline-block bg-indigo-500 text-white rounded-full py-3 px-10 hover:bg-indigo-400 transition mt-20"
-              >Mulai</a
-            >
-          </div>
+      <!-- HERO CONTENT -->
+      <div
+        class="relative z-10 container max-w-6xl mx-auto px-6 h-full flex items-center"
+      >
+        <div class="w-full lg:w-7/12">
+          <p class="text-white font-semibold text-lg mb-2">PetCure</p>
+          <h1
+            class="text-white text-2xl sm:text-3xl md:text-3xl lg:text-3xl font-bold"
+          >
+            Petcure. Trusted Pet Care.
+          </h1>
+
+          <a
+            href="#home"
+            class="inline-block bg-indigo-500 text-white rounded-full py-3 px-10 hover:bg-indigo-600 transition"
+          >
+            Mulai
+          </a>
         </div>
       </div>
     </section>
-
     <!-- hero section End -->
+     <script src="script.js"></script>
   </body>
 </html>
